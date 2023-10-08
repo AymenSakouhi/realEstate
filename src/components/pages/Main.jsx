@@ -9,7 +9,7 @@ const Main = () => {
           <div className="banner-box">
             <div className="banner-box__img">
               <img
-                src="assets/images/banner-image.jpg"
+                src="assets/images/image-tunisia.jpg"
                 width="1300"
                 height="634"
                 alt=""
