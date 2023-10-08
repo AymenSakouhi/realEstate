@@ -1,4 +1,5 @@
 import React from "react";
+import Banner from "../Banner";
 import Properties from "./Properties";
 
 const Main = () => {
@@ -308,6 +309,8 @@ const Main = () => {
       </div>
 
       <Properties />
+
+      <Banner title={"Find your best Real Estate"} buttonTitle={"CONTACT US"} />
     </>
   );
 };
