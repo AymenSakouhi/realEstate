@@ -7,9 +7,11 @@ const NavBar = () => {
       <header>
         <div className="container">
           <div className="logo">
+
             <Link to="/">
-              <img src="assets/images/logo.svg" alt="Real Estate" />
+              <img src="assets/images/logo.svg" alt="Real Estate" className="logo-image" />
             </Link>
+
           </div>
 
           <button className="menu-toggle">
