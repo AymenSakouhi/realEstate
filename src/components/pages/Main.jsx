@@ -113,11 +113,11 @@ const Main = () => {
                               <label className="form-label">Price Range</label>
                               <select className="form-control">
                                 <option>Choose Price Range</option>
-                                <option>$0-1000</option>
-                                <option>$1000-$2000</option>
-                                <option>$2000-$3000</option>
-                                <option>$3000-$4000</option>
-                                <option>$4000-$5000</option>
+                                <option>TND 0-1000</option>
+                                <option>TND 1000-2000</option>
+                                <option>TND 2000-3000</option>
+                                <option>TND 3000-4000</option>
+                                <option>TND 4000-5000</option>
                               </select>
                             </div>
                           </div>
