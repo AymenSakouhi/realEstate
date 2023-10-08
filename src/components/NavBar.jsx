@@ -8,7 +8,11 @@ const NavBar = () => {
         <div className="container">
           <div className="logo">
             <Link to="/">
-              <img src="assets/images/logo.svg" alt="Real Estate" />
+              <img
+                src="assets/images/logo-tun.png"
+                alt="Real Estate"
+                className="logo-image"
+              />
             </Link>
           </div>
 
@@ -26,7 +30,7 @@ const NavBar = () => {
                   <Link to="/properties">Properties</Link>
                 </li>
                 <li>
-                  <a href="#">Agents</a>
+                <Link to="/agents">Agents</Link>
                 </li>
                 <li>
                   <a href="#">Blog</a>

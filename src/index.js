@@ -7,6 +7,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Properties from "./components/pages/Properties";
+import Agents from "./components/pages/Agents";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -16,6 +18,7 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/properties" element={<Properties />} />
+        <Route path="/agents" element={<Agents />} />
       </Routes>
       <Footer />
     </Router>
