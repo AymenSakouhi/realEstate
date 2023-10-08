@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -6,9 +7,9 @@ const NavBar = () => {
       <header>
         <div className="container">
           <div className="logo">
-            <a href="#">
+            <Link to="/">
               <img src="assets/images/logo.svg" alt="Real Estate" />
-            </a>
+            </Link>
           </div>
 
           <button className="menu-toggle">
@@ -19,10 +20,10 @@ const NavBar = () => {
             <div className="menu">
               <ul>
                 <li>
-                  <a href="#">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <a href="#">Properties</a>
+                  <Link to="/properties">Properties</Link>
                 </li>
                 <li>
                   <a href="#">Agents</a>
