@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Properties from "./components/pages/Properties";
 import Agents from "./components/pages/Agents";
 
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <div className="App">
