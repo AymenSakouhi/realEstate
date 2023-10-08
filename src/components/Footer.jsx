@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="col-lg-4 col-md-8">
               <div className="f-info">
                 <div className="f-logo pb-3">
-                  <img src="assets/images/logo.svg" alt="" />
+                  <img src="assets/images/logo-tun.PNG" alt="" />
                 </div>
                 <p className="text-small pb-3">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
