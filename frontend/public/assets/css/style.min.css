@@ -12396,14 +12396,14 @@ img {
 }
 
 .logo-image {
-    width: 300px;
-  }
-  
+  width: 300px;
+}
+
 /* do media query */
 @media (max-width: 768px) {
-    .logo-image {
-     width: 70%;
-    }
+  .logo-image {
+    width: 70%;
+  }
 }
 
 input {
@@ -13172,7 +13172,7 @@ button:focus {
 }
 .banner-wrap .banner-box {
   position: relative;
-  background: #ecf1f8;
+  background: #000000;
   padding: 90px;
   border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -13214,6 +13214,7 @@ button:focus {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  opacity: 0.6;
 }
 .banner-wrap .banner-box__content {
   position: relative;
@@ -13227,6 +13228,7 @@ button:focus {
 .banner-wrap .banner-box__title {
   max-width: 490px;
   padding-bottom: 38px;
+  color: #ffffff;
 }
 .banner-wrap .banner-box__txt {
   color: #ffffff;
@@ -13799,4 +13801,3 @@ button:focus {
 .social-list ul li a.linkedin {
   color: #0a66c2;
 }
-
