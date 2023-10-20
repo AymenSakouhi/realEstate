@@ -1,6 +1,26 @@
-import React from "react";
+import React, {useState} from "react";
 
 const Footer = () => {
+
+  const [emailAddress, setEmailAddress] = useState("");
+
+  //check for email address format
+  const validateEmail = (email) => {
+    var re = /\S+@\S+\.\S+/;
+    return re.test(email);
+  };
+
+  //submit email address
+  const submitEmail = (e) => {
+    e.preventDefault();
+    if (validateEmail(emailAddress)) {
+      console.log("email address is valid");
+    } else {
+      console.log("email address is not valid");
+    }
+  };
+
+
   return (
     <div className="footer-wrap">
       <footer>
@@ -104,9 +124,14 @@ const Footer = () => {
                           type="email"
                           className="form-control"
                           placeholder="Email Address"
+                          value={emailAddress}
+                          onBlur={(e) => setEmailAddress(e.target.value)}
+                          onChange={(e) => setEmailAddress(e.target.value)}
                         />
                         <div className="cta">
-                          <button className="btn btn-primary btn-icon btn-sm btn-rounded">
+                          <button className="btn btn-primary btn-icon btn-sm btn-rounded"
+                            onClick={(e) => submitEmail(e)}
+                          >
                             <i className="ri-arrow-right-line"></i>
                           </button>
                         </div>
