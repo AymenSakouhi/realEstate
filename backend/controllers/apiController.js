@@ -20,4 +20,28 @@ const postNewsLetter = (req, res) => {
     .catch((e) => res.status(404).json({ error: e }));
 };
 
-export { getNewsLetter, postNewsLetter };
+const searchProperties = async (req, res) => {
+    try {
+        // Extract query parameters
+        const { starting_date, ending_date, minimum_rental, maximum_rental } = req.query;
+
+        // Construct the query
+        const query = {
+            'starting_date': { $gte: new Date(starting_date) },
+            'ending_date': { $lte: new Date(ending_date) },
+            'minimum_rental': { $lte: minimum_rental },
+            'maximum_rental': { $gte: maximum_rental }
+        };
+
+        // Execute the query
+        const properties = await Property.find(query);
+
+        // Send the response
+        res.status(200).json(properties);
+    } catch (error) {
+        // Handle errors
+        res.status(500).json({ message: error.message });
+    }
+};
+
+export { getNewsLetter, postNewsLetter,searchProperties };
