@@ -44,4 +44,14 @@ const searchProperties = async (req, res) => {
     }
 };
 
-export { getNewsLetter, postNewsLetter,searchProperties };
+const createProperty = async (req, res) => {
+    try {
+        const newProperty = new Property(req.body);
+        await newProperty.save();
+        res.status(201).send(newProperty);
+    } catch (error) {
+        res.status(400).send(error);
+    }
+};
+
+export { getNewsLetter, postNewsLetter,searchProperties,createProperty };
